@@ -20,3 +20,14 @@ previewBox.forEach(close =>{
     preveiwContainer.style.display = 'none';
   };
 });
+
+
+/* Chuyển danh sách đối tượng thành HTML
+input: danh sách sản phẩm
+output: HTML  */
+
+function chuyenDanhSachDoiTuongSanPhamThanhHTML(danhSachSanPham){
+  var HTMLDanhSachSanPham = '<div class="products-preview">Hello proaa </div>';
+
+  return HTMLDanhSachSanPham;
+}

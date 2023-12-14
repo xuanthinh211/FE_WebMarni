@@ -109,53 +109,48 @@
     margin-top:29px;
     color:#fff;
 }
-/*================cart================*/
-.products-container{
-    display: flex;
-    max-width: 650px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding-bottom:100px ;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.product-header {
-    width: 100%; 
-    max-width: 650px;
-    display: flex;
-    justify-content: flex-start;
-    border-bottom: 4px solid lightgrey;
-    margin: 0 auto;
+.them-moi-san-pham {
+    width: 50%;
+    border: 1px solid #ddd;
+    margin: auto; 
+    padding: 30px;
+    margin-top: -770px;
+    box-shadow: 2px 2px 5px#ddd;
+
 }
 
-.products-container ion-icon{
-    font-size: 25px;
-    color: blue;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
+.them-moi-san-pham label,
+input {
+    width: 100%;
+    display: block;
 }
 
-.product-title {
-    width: 45%;
+.them-moi-san-pham label {
+    margin-top: 20px;
 }
-.price {
-    width: 15%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-   
+
+
+.them-moi-san-pham input {
+    margin-top: 5px; 
+    padding: 10px 20px; 
+    border: 1px solid#ddd;
+    border-radius: 5px
 }
-.quantity{
-    width: 30%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
+.them-moi-san-pham button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid#ddd;
+    border-radius: 5px;
+    background-color: #F7442E;
+    color:#fff;
 }
-.total{
-    width: 10%;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    align-items: center;
+.them-moi-san-pham button:hover {
+    background-color: #c53624;
 }
