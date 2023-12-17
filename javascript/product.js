@@ -1,33 +1,38 @@
-let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
+let cart = document.querySelector('.cart'); 
+let cartfield = document.querySelector('.cart-field'); 
+let add = document.getElementsByClassName('add');
 
-document.querySelectorAll('.products-container .product').forEach(product =>{
-  product.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview =>{
-      let target = preview.getAttribute('data-target');
-      if(name == target){
-        preview.classList.add('active');
+for (let but of add){
+   but.onclick= e=>{
+      let item = Number(cart.getAttribute('data-count') || 0); 
+      cart.setAttribute('data-count', item + 1); 
+      cart.classList.add('on');
+      // image animated to cart
+      let parent = e.target.parentNode.parentNode.parentNode; 
+      let image = parent.querySelector('img');
+      let span = document.createElement('span');
+      span.className = 'image-carior';
+      parent.insertBefore(span, parent.lastElementChild);
+
+      let s_image = image.cloneNode(false); 
+      span.appendChild(s_image); 
+      span.classList.add('active');
+      setTimeout (() => {
+        span.classList.remove('active'); 
+        span.removeChild(s_image);
+      }, 500);
+      // copy and paste
+    
+      let clone = parent.cloneNode(true);
+     
+      clone.querySelector('.add').style.display = "none";
+      clone.querySelector('.add').removeAttribute('class');
+      cartfield.appendChild(clone);
+
+      if (clone) {
+        cart.onclick = ()=>{
+          cartfield.classList.toggle('display');
+        }
       }
-    });
-  };
-});
-
-previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
-    close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
-  };
-});
-
-
-/* Chuyển danh sách đối tượng thành HTML
-input: danh sách sản phẩm
-output: HTML  */
-
-function chuyenDanhSachDoiTuongSanPhamThanhHTML(danhSachSanPham){
-  var HTMLDanhSachSanPham = '<div class="products-preview">Hello proaa </div>';
-
-  return HTMLDanhSachSanPham;
+  }
 }
