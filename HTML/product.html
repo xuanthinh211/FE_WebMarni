@@ -13,13 +13,15 @@
 <body>
     <nav>
       <div class="logo">
-        <img src="../img/logo.jpg" height="100" weight="100" alt="" />
+        <a href="../index.html">
+          <img src="../img/logo.jpg" height="100" weight="100" alt="" />
+        </a>
       </div>
        <ul class="nav-menu">
             <li class="itema"><a href="../index.html">Home</a></li>
             <li class="itema"><a href="../HTML/product.html">Products</a></li>
-            <li class="itema"><a href="../HTML/blog.html">Blog</a></li>
-            <li class="itema"><a href="../HTML/contact.html">Contact</a></li>
+            <li class="itema"><a href="#list-products">Blog</a></li>
+            <li class="itema"><a href="#contact-section">Contact</a></li>
        </ul>
        <div>
         <ul class="nav-right">
@@ -31,169 +33,287 @@
     </nav>
 
     <main>
-        <div class="item">
-            <img src="../img/1.jpg" alt=""> 
-            <div class="dat">
-                <p>
-                    <strong>Blazer</strong>
-                    <small class="price">$30.90</small> 
-                    <small>Men's fashion cloth</small>
-                </p> 
-                <form action="">
-                    <div class="size-select">
-                      <p>Size</p>
-                      <label for="small">
-                        <input type="radio" name="size" id="small">
-                        <span>S</span>
-                      </label>
-                      <label for="medium">
-                        <input type="radio" name="size" id="medium">
-                        <span>M</span>
-                      </label>
-                      <label for="large">
-                        <input type="radio" name="size" id="large">
-                        <span>L</span>
-                      </label>
-                      <label for="x-large">
-                        <input type="radio" name="size" id="x-large">
-                        <span>XL</span>
-                      </label>
-                      <label for="xx-large">
-                        <input type="radio" name="size" id="xx-large">
-                        <span>XXL</span>
-                      </label>
-                    </div>
-                    <div class="color-select">
-                      <p>Color</p>
-                      <label for="blue">
-                        <input type="radio" name="color" id="blue">
-                        <span class="color-1"></span>
-                      </label>
-                      <label for="red">
-                        <input type="radio" name="color" id="red">
-                        <span class="color-2"></span>
-                      </label>
-                      <label for="green">
-                        <input type="radio" name="color" id="green">
-                        <span class="color-3"></span>
-                      </label>
-                      <label for="black">
-                        <input type="radio" name="color" id="black">
-                        <span class="color-4"></span>
-                      </label>
-                      <label for="yellow">
-                        <input type="radio" name="color" id="yellow">
-                        <span class="color-5"></span>
-                      </label>
-                      <label for="pink">
-                        <input type="radio" name="color" id="pink">
-                        <span class="color-6"></span>
-                      </label>
-                    </div>
-                    <div class="quantity-select">
-                      <p>Quantity</p>
-                      <input type="number" value="1">
-                    </div>
-                  </form>
-                <p>
-                    <button>Buy now</button>
-                    <button class="add">Add to cart</button>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../img/1.jpg" alt=""> 
-            <div class="dat">
-                <p>
-                <strong>Blazer</strong>
-                <small class="price">$30.90</small> 
-                <small>Men's fashion cloth</small>
-                </p> 
-                <p>
-                    <strong>Size</strong>
-                    <p class="in">
-                        <span>S</span>
-                        <span class="active">S</span>
-                        <span>S</span>
-                        <span>S</span>
-                    </p>
-                </p>
-                <p>
-                    <strong>Color</strong>
-                    <p class="in">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </p>
-                </p>
-                <p>
-                    <button>Buy now</button>
-                    <button class="add">Add to cart</button>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../img/1.jpg" alt=""> 
-            <div class="dat">
-                <p>
-                <strong>Blazer</strong>
-                <small class="price">$30.90</small> 
-                <small>Men's fashion cloth</small>
-                </p> 
-                <p>
-                    <strong>Size</strong>
-                    <p class="in">
-                        <span>S</span>
-                        <span class="active">S</span>
-                        <span>S</span>
-                        <span>S</span>
-                    </p>
-                </p>
-                <p>
-                    <strong>Color</strong>
-                    <p class="in">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </p>
-                </p>
-                <p>
-                    <button>Buy now</button>
-                    <button class="add">Add to cart</button>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../img/1.jpg" alt=""> 
-            <div class="dat">
-                <p>
-                <strong>Blazer</strong>
-                <small class="price">$30.90</small> 
-                <small>Men's fashion cloth</small>
-                </p> 
-                <p>
-                    <strong>Size</strong>
-                    <p class="in">
-                        <span>S</span>
-                        <span class="active">S</span>
-                        <span>S</span>
-                        <span>S</span>
-                    </p>
-                </p>
-                <p>
-                    <strong>Color</strong>
-                    <p class="in">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </p>
-                </p>
-                <p>
-                    <button>Buy now</button>
-                    <button class="add">Add to cart</button>                   
-                </p>
-            </div>
-        </div>
+    <div class="item">
+      <img src="../img/1.jpg" alt=""> 
+      <div class="dat">
+          <p>
+              <strong>Blazer</strong>
+              <small class="price">$30.90</small> 
+              <small>Men's fashion cloth</small>
+          </p> 
+          <form action="">
+              <div class="size-select">
+                <p>Size</p>
+                <label for="small">
+                  <input type="radio" name="size" id="small">
+                  <span>S</span>
+                </label>
+                <label for="medium">
+                  <input type="radio" name="size" id="medium">
+                  <span>M</span>
+                </label>
+                <label for="large">
+                  <input type="radio" name="size" id="large">
+                  <span>L</span>
+                </label>
+                <label for="x-large">
+                  <input type="radio" name="size" id="x-large">
+                  <span>XL</span>
+                </label>
+                <label for="xx-large">
+                  <input type="radio" name="size" id="xx-large">
+                  <span>XXL</span>
+                </label>
+              </div>
+              <div class="color-select">
+                <p>Color</p>
+                <label for="blue">
+                  <input type="radio" name="color" id="blue">
+                  <span class="color-1"></span>
+                </label>
+                <label for="red">
+                  <input type="radio" name="color" id="red">
+                  <span class="color-2"></span>
+                </label>
+                <label for="green">
+                  <input type="radio" name="color" id="green">
+                  <span class="color-3"></span>
+                </label>
+                <label for="black">
+                  <input type="radio" name="color" id="black">
+                  <span class="color-4"></span>
+                </label>
+                <label for="yellow">
+                  <input type="radio" name="color" id="yellow">
+                  <span class="color-5"></span>
+                </label>
+                <label for="pink">
+                  <input type="radio" name="color" id="pink">
+                  <span class="color-6"></span>
+                </label>
+              </div>
+              <div class="quantity-select">
+                <p>Quantity</p>
+                <input type="number" value="1">
+              </div>
+            </form>
+          <p>
+              <button id="buyNowBtn" >Buy now</button>
+              <button class="add">Add to cart</button>
+          </p>
+      </div>
+      
+    </div>
+    <div class="item">
+      <img src="../img/1.jpg" alt=""> 
+      <div class="dat">
+          <p>
+              <strong>Blazer</strong>
+              <small class="price">$30.90</small> 
+              <small>Men's fashion cloth</small>
+          </p> 
+          <form action="">
+              <div class="size-select">
+                <p>Size</p>
+                <label for="small">
+                  <input type="radio" name="size" id="small">
+                  <span>S</span>
+                </label>
+                <label for="medium">
+                  <input type="radio" name="size" id="medium">
+                  <span>M</span>
+                </label>
+                <label for="large">
+                  <input type="radio" name="size" id="large">
+                  <span>L</span>
+                </label>
+                <label for="x-large">
+                  <input type="radio" name="size" id="x-large">
+                  <span>XL</span>
+                </label>
+                <label for="xx-large">
+                  <input type="radio" name="size" id="xx-large">
+                  <span>XXL</span>
+                </label>
+              </div>
+              <div class="color-select">
+                <p>Color</p>
+                <label for="blue">
+                  <input type="radio" name="color" id="blue">
+                  <span class="color-1"></span>
+                </label>
+                <label for="red">
+                  <input type="radio" name="color" id="red">
+                  <span class="color-2"></span>
+                </label>
+                <label for="green">
+                  <input type="radio" name="color" id="green">
+                  <span class="color-3"></span>
+                </label>
+                <label for="black">
+                  <input type="radio" name="color" id="black">
+                  <span class="color-4"></span>
+                </label>
+                <label for="yellow">
+                  <input type="radio" name="color" id="yellow">
+                  <span class="color-5"></span>
+                </label>
+                <label for="pink">
+                  <input type="radio" name="color" id="pink">
+                  <span class="color-6"></span>
+                </label>
+              </div>
+              <div class="quantity-select">
+                <p>Quantity</p>
+                <input type="number" value="1">
+              </div>
+            </form>
+          <p>
+              <button id="buyNowBtn" >Buy now</button>
+              <button class="add">Add to cart</button>
+          </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../img/1.jpg" alt=""> 
+      <div class="dat">
+          <p>
+              <strong>Blazer</strong>
+              <small class="price">$30.90</small> 
+              <small>Men's fashion cloth</small>
+          </p> 
+          <form action="">
+              <div class="size-select">
+                <p>Size</p>
+                <label for="small">
+                  <input type="radio" name="size" id="small">
+                  <span>S</span>
+                </label>
+                <label for="medium">
+                  <input type="radio" name="size" id="medium">
+                  <span>M</span>
+                </label>
+                <label for="large">
+                  <input type="radio" name="size" id="large">
+                  <span>L</span>
+                </label>
+                <label for="x-large">
+                  <input type="radio" name="size" id="x-large">
+                  <span>XL</span>
+                </label>
+                <label for="xx-large">
+                  <input type="radio" name="size" id="xx-large">
+                  <span>XXL</span>
+                </label>
+              </div>
+              <div class="color-select">
+                <p>Color</p>
+                <label for="blue">
+                  <input type="radio" name="color" id="blue">
+                  <span class="color-1"></span>
+                </label>
+                <label for="red">
+                  <input type="radio" name="color" id="red">
+                  <span class="color-2"></span>
+                </label>
+                <label for="green">
+                  <input type="radio" name="color" id="green">
+                  <span class="color-3"></span>
+                </label>
+                <label for="black">
+                  <input type="radio" name="color" id="black">
+                  <span class="color-4"></span>
+                </label>
+                <label for="yellow">
+                  <input type="radio" name="color" id="yellow">
+                  <span class="color-5"></span>
+                </label>
+                <label for="pink">
+                  <input type="radio" name="color" id="pink">
+                  <span class="color-6"></span>
+                </label>
+              </div>
+              <div class="quantity-select">
+                <p>Quantity</p>
+                <input type="number" value="1">
+              </div>
+            </form>
+          <p>
+              <button id="buyNowBtn" >Buy now</button>
+              <button class="add">Add to cart</button>
+          </p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="../img/1.jpg" alt=""> 
+      <div class="dat">
+          <p>
+              <strong>Blazer</strong>
+              <small class="price">$30.90</small> 
+              <small>Men's fashion cloth</small>
+          </p> 
+          <form action="">
+              <div class="size-select">
+                <p>Size</p>
+                <label for="small">
+                  <input type="radio" name="size" id="small">
+                  <span>S</span>
+                </label>
+                <label for="medium">
+                  <input type="radio" name="size" id="medium">
+                  <span>M</span>
+                </label>
+                <label for="large">
+                  <input type="radio" name="size" id="large">
+                  <span>L</span>
+                </label>
+                <label for="x-large">
+                  <input type="radio" name="size" id="x-large">
+                  <span>XL</span>
+                </label>
+                <label for="xx-large">
+                  <input type="radio" name="size" id="xx-large">
+                  <span>XXL</span>
+                </label>
+              </div>
+              <div class="color-select">
+                <p>Color</p>
+                <label for="blue">
+                  <input type="radio" name="color" id="blue">
+                  <span class="color-1"></span>
+                </label>
+                <label for="red">
+                  <input type="radio" name="color" id="red">
+                  <span class="color-2"></span>
+                </label>
+                <label for="green">
+                  <input type="radio" name="color" id="green">
+                  <span class="color-3"></span>
+                </label>
+                <label for="black">
+                  <input type="radio" name="color" id="black">
+                  <span class="color-4"></span>
+                </label>
+                <label for="yellow">
+                  <input type="radio" name="color" id="yellow">
+                  <span class="color-5"></span>
+                </label>
+                <label for="pink">
+                  <input type="radio" name="color" id="pink">
+                  <span class="color-6"></span>
+                </label>
+              </div>
+              <div class="quantity-select">
+                <p>Quantity</p>
+                <input type="number" value="1">
+              </div>
+            </form>
+          <p>
+              <button id="buyNowBtn" >Buy now</button>
+              <button class="add">Add to cart</button>
+          </p>
+      </div>
+    </div>
 
         
     </main>
@@ -220,11 +340,11 @@
             <a href="">Blog</a>
           </div>
           <div class="item-footer">
-            <a href="#contract-section">Contact</a>
+            <a href="#contact-section">Contact</a>
           </div>
         </ul>
       </div>
-      <div class="box" id="contract-section">
+      <div class="box" id="contact-section">
         <h3>CONTACT</h3>
         <form action="">
           <input type="text" placeholder="Email" />
